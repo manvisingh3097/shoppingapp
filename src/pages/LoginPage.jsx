@@ -29,7 +29,7 @@ const LoginPage = () => {
             localStorage.setItem('token' , response.data.token)
             localStorage.setItem('token' , JSON.stringify(response.data.user) )
 
-           navigate('/All')
+           navigate('/')
 
         }, (error) => {
 

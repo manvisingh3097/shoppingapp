@@ -48,7 +48,7 @@ const Navbar = () => {
             >
                 <span className="navbar-toggler-icon"></span>
             </button>
-          
+
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     {loginStatus ? (
@@ -65,36 +65,38 @@ const Navbar = () => {
                         </li>
                     )}
                 </ul>
+
+                
             </div>
-            
+
             <div>
-          <Link to={"/favorites"} className="navbarWishDiv">
+                <Link to={"/favorites"} className="navbarWishDiv">
+                    <div>
+                        <FaHeart size={"1.9em"} color="red" />
+                    </div>
+                    <div
+                        className={cart.wishListItems.length > 0 ? "wishLengthDiv" : null}
+                    >
+                        <span className="wishLengthSpan">
+                            {cart.wishListItems.length > 0
+                                ? cart.wishListItems.length
+                                : null}
+                        </span>
+                    </div>
+                </Link>
+            </div>
             <div>
-              <FaHeart size={"1.9em"} color="red" />
+                <Link to={"/cartPage"} className="navbarCartDiv">
+                    <div>
+                        <AiOutlineShoppingCart color="black" size={"2.5rem"} />
+                    </div>
+                    <div className={cart.cartItems.length > 0 ? "cartLengthDiv" : null}>
+                        <span className="cartLengthSpan">
+                            {cart.cartItems.length > 0 ? totalCartQuantity : null}
+                        </span>
+                    </div>
+                </Link>
             </div>
-            <div
-              className={cart.wishListItems.length > 0 ? "wishLengthDiv" : null}
-            >
-              <span className="wishLengthSpan">
-                {cart.wishListItems.length > 0
-                  ? cart.wishListItems.length
-                  : null}
-              </span>
-            </div>
-          </Link>
-        </div>
-        <div>
-          <Link to={"/cartPage"} className="navbarCartDiv">
-            <div>
-              <AiOutlineShoppingCart color="black" size={"2.5rem"} />
-            </div>
-            <div className={cart.cartItems.length > 0 ? "cartLengthDiv" : null}>
-              <span className="cartLengthSpan">
-                {cart.cartItems.length > 0 ? totalCartQuantity : null}
-              </span>
-            </div>
-          </Link>
-        </div>
 
         </nav>
     );
