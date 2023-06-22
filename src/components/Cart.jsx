@@ -11,8 +11,8 @@ function Cart() {
     subTotal += each.price * each.itemQuantity;
   }
 
-  let shippingEstimate = subTotal * 0.04;
-  let taxEstimate = subTotal * 0.10;
+  let shippingEstimate = subTotal * 0.05;
+  let taxEstimate = subTotal * 0.18;
   let orderTotal = subTotal + shippingEstimate + taxEstimate;
 
   return (
