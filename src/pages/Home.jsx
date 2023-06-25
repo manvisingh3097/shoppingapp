@@ -13,7 +13,9 @@ return(
     <>
        
         <Header />
+        <hr />
         <Navbar /> 
+        <hr />
         <AllProducts />
         {/* <EachCategory data={catName} /> */}
         {/* <ProductList /> */}

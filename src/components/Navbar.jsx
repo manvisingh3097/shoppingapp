@@ -36,8 +36,8 @@ const Navbar = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse navbar-brand container navbar ml-auto" id="navbarSupportedContent">
-                <ul className="navbar-nav mr-auto">
+            <div className=" navbar navbar-expand-lg navbar-light bg-light container " id="navbarSupportedContent">
+                <ul className="navbar-nav mr-auto navbar container">
                     
                         <li className="nav-item active ">
                         <Link className="nav-link" to="/">

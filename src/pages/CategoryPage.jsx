@@ -10,7 +10,9 @@ function CategoryPage() {
   return (
     <>
       <Header />
+      <hr/>
       <Navbar />
+      <hr/>
       <CategoryNames />
       <EachCategory data={catName} />
     </>

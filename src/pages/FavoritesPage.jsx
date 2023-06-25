@@ -7,7 +7,9 @@ function FavoritesPage() {
   return (
     <>
       <Header />
+      <hr/>
       <Navbar />
+      <hr/>
       <CategoryNames />
       <Wishlist />
     </>

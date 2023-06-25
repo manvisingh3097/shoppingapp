@@ -7,7 +7,9 @@ function CartPage() {
   return (
     <>
       <Header />
+      <hr/>
       <Navbar />
+      <hr/>
       <CategoryNames />
       <Cart />
 
